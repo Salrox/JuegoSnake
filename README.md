@@ -1,8 +1,8 @@
 # Juego de la Serpiente
 
-![](/img/banner.png)
+<img src="./img/banner.png" height=427 width=600>
 
-### Proyecto realizado de manera guiada con el profesorado de Implantación de Sistemas Operativos durante mis estudios en 1º Administración de Sistemas Informáticcos en Red
+### Proyecto realizado de manera guiada con el profesorado de Implantación de Sistemas Operativos durante mis estudios en 1º Administración de Sistemas Informáticos en Red
 
 >Proyecto en desarrollo
 
@@ -15,12 +15,12 @@
 
 ### <img src="./img/objetivo.png" width=25> Objetivo
 ---
-<br>
+
 El objetivo principal de este proyecto es <b>aplicar los conocimientos adquiridos en clase</b> mientras gamificamos nuestro progreso
 
 ### <img src="./img/python.png" width=25> Tecnologías Utilizadas
 ---
-<br>
+
 
 
 
