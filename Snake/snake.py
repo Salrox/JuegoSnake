@@ -90,7 +90,20 @@ while True:
         nuevo_seg.color("green")
         nuevo_seg.penup() #Quita el rastro de movimiento
         segmentos.append(nuevo_seg)
-        
+
+    #Mover la serpiente
+    totalSegmentos = len(segmentos) #Guardo cuantos segmentos hay
+    for index in range(totalSegmentos-1, 0, -1): #Desde TotalSegmentos hasta la posición 0 restando 1
+        x = segmentos[index-1].xcor() #Guardamos la "x" del elemento anterior
+        y = segmentos[index-1].ycor() #Guardamos la "y" del elemento anterior
+        segmentos[index].goto(x,y)
+
+    #Mover el primer elemento que sigue a cabeza
+    if totalSegmentos > 0: #Si tengo cuerpo en la serpiente
+        x = cabeza.xcor()
+        y = cabeza.ycor()
+        segmentos[0].goto(x,y)
+
     if cabeza.xcor() == -300 or cabeza.xcor() == 300 or cabeza.ycor() == -300 or cabeza.ycor() == 300: #Si colisiona con la pared
         cabeza.goto(0,0)
         cabeza.direction = "stop"
